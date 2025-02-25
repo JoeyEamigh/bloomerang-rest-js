@@ -13,6 +13,9 @@
           "prefixParameterInterfaces": false,
           "stringEnums": true,
           "validationAttributes": true
+        },
+        "openapi-normalizer": {
+          "SET_TAGS_FOR_ALL_OPERATIONS": "bloomerang"
         }
       }
     }

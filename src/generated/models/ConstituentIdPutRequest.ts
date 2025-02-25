@@ -13,6 +13,13 @@
  */
 
 import { mapValues } from '../runtime';
+import type { ConstituentPostRequestAllOfAllOfPrimaryEmail } from './ConstituentPostRequestAllOfAllOfPrimaryEmail';
+import {
+    ConstituentPostRequestAllOfAllOfPrimaryEmailFromJSON,
+    ConstituentPostRequestAllOfAllOfPrimaryEmailFromJSONTyped,
+    ConstituentPostRequestAllOfAllOfPrimaryEmailToJSON,
+    ConstituentPostRequestAllOfAllOfPrimaryEmailToJSONTyped,
+} from './ConstituentPostRequestAllOfAllOfPrimaryEmail';
 import type { ConstituentPostRequestAllOfAllOfFullCustomProfileImageInner } from './ConstituentPostRequestAllOfAllOfFullCustomProfileImageInner';
 import {
     ConstituentPostRequestAllOfAllOfFullCustomProfileImageInnerFromJSON,
@@ -183,6 +190,12 @@ export interface ConstituentIdPutRequest {
     profilePictureType?: ConstituentIdPutRequestProfilePictureTypeEnum;
     /**
      * 
+     * @type {ConstituentPostRequestAllOfAllOfPrimaryEmail}
+     * @memberof ConstituentIdPutRequest
+     */
+    primaryEmail?: ConstituentPostRequestAllOfAllOfPrimaryEmail;
+    /**
+     * 
      * @type {ConstituentsGet200ResponseAllOfResultsInnerAllOfAllOfPrimaryPhone}
      * @memberof ConstituentIdPutRequest
      */
@@ -306,6 +319,7 @@ export function ConstituentIdPutRequestFromJSONTyped(json: any, ignoreDiscrimina
         'gender': json['Gender'] == null ? undefined : json['Gender'],
         'birthdate': json['Birthdate'] == null ? undefined : (new Date(json['Birthdate'])),
         'profilePictureType': json['ProfilePictureType'] == null ? undefined : json['ProfilePictureType'],
+        'primaryEmail': json['PrimaryEmail'] == null ? undefined : ConstituentPostRequestAllOfAllOfPrimaryEmailFromJSON(json['PrimaryEmail']),
         'primaryPhone': json['PrimaryPhone'] == null ? undefined : ConstituentsGet200ResponseAllOfResultsInnerAllOfAllOfPrimaryPhoneFromJSON(json['PrimaryPhone']),
         'primaryAddress': json['PrimaryAddress'] == null ? undefined : ConstituentPostRequestAllOfAllOfPrimaryAddressFromJSON(json['PrimaryAddress']),
         'secondaryAddresses': json['SecondaryAddresses'] == null ? undefined : ((json['SecondaryAddresses'] as Array<any>).map(ConstituentPostRequestAllOfAllOfPrimaryAddressFromJSON)),
@@ -349,6 +363,7 @@ export function ConstituentIdPutRequestToJSONTyped(value?: ConstituentIdPutReque
         'Gender': value['gender'],
         'Birthdate': value['birthdate'] == null ? undefined : ((value['birthdate']).toISOString().substring(0,10)),
         'ProfilePictureType': value['profilePictureType'],
+        'PrimaryEmail': ConstituentPostRequestAllOfAllOfPrimaryEmailToJSON(value['primaryEmail']),
         'PrimaryPhone': ConstituentsGet200ResponseAllOfResultsInnerAllOfAllOfPrimaryPhoneToJSON(value['primaryPhone']),
         'PrimaryAddress': ConstituentPostRequestAllOfAllOfPrimaryAddressToJSON(value['primaryAddress']),
         'SecondaryAddresses': value['secondaryAddresses'] == null ? undefined : ((value['secondaryAddresses'] as Array<any>).map(ConstituentPostRequestAllOfAllOfPrimaryAddressToJSON)),

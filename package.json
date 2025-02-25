@@ -3,17 +3,17 @@
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "tsup ./src --watch",
     "build": "tsup ./src",
     "pregenerate": "rm -rf src/generated",
-    "generate": "openapi-generator-cli generate --generator-key v2"
+    "generate": "openapi-generator-cli generate --generator-key v2",
+    "postgenerate": "tsup ./src"
   },
   "devDependencies": {
     "@openapitools/openapi-generator-cli": "^2.16.3",
-    "@types/bun": "latest",
-    "prettier": "^3.5.1",
+    "prettier": "^3.5.2",
     "tsup": "^8.3.6"
   },
   "peerDependencies": {

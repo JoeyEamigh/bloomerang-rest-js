@@ -57,228 +57,198 @@ import {
 } from './ConstituentsGet200ResponseAllOfResultsInnerAllOfAllOfPrimaryPhone';
 
 /**
- * 
+ * Additional validation note - FirstName and LastName are required when Type is Individual.  FullName is required when Type is Organization.
  * @export
- * @interface ConstituentPostRequest
+ * @interface HouseholdIdPutRequestAllOfAllOfHead
  */
-export interface ConstituentPostRequest {
+export interface HouseholdIdPutRequestAllOfAllOfHead {
     /**
      * 
      * @type {string}
-     * @memberof ConstituentPostRequest
+     * @memberof HouseholdIdPutRequestAllOfAllOfHead
      */
-    type: ConstituentPostRequestTypeEnum;
+    type?: HouseholdIdPutRequestAllOfAllOfHeadTypeEnum;
     /**
      * 
      * @type {string}
-     * @memberof ConstituentPostRequest
+     * @memberof HouseholdIdPutRequestAllOfAllOfHead
      */
-    status?: ConstituentPostRequestStatusEnum;
+    status?: HouseholdIdPutRequestAllOfAllOfHeadStatusEnum;
     /**
      * 
      * @type {string}
-     * @memberof ConstituentPostRequest
+     * @memberof HouseholdIdPutRequestAllOfAllOfHead
      */
     firstName?: string;
     /**
      * 
      * @type {string}
-     * @memberof ConstituentPostRequest
+     * @memberof HouseholdIdPutRequestAllOfAllOfHead
      */
     lastName?: string;
     /**
      * 
      * @type {string}
-     * @memberof ConstituentPostRequest
+     * @memberof HouseholdIdPutRequestAllOfAllOfHead
      */
     middleName?: string;
     /**
      * Must match a prefix in the Bloomerang CRM
      * @type {string}
-     * @memberof ConstituentPostRequest
+     * @memberof HouseholdIdPutRequestAllOfAllOfHead
      */
     prefix?: string;
     /**
      * Must match a suffix in the Bloomerang CRM
      * @type {string}
-     * @memberof ConstituentPostRequest
+     * @memberof HouseholdIdPutRequestAllOfAllOfHead
      */
     suffix?: string;
     /**
      * 
      * @type {string}
-     * @memberof ConstituentPostRequest
+     * @memberof HouseholdIdPutRequestAllOfAllOfHead
      */
     fullName?: string;
     /**
      * 
      * @type {string}
-     * @memberof ConstituentPostRequest
+     * @memberof HouseholdIdPutRequestAllOfAllOfHead
      */
     informalName?: string;
     /**
      * 
      * @type {string}
-     * @memberof ConstituentPostRequest
+     * @memberof HouseholdIdPutRequestAllOfAllOfHead
      */
     formalName?: string;
     /**
      * 
      * @type {string}
-     * @memberof ConstituentPostRequest
+     * @memberof HouseholdIdPutRequestAllOfAllOfHead
      */
     envelopeName?: string;
     /**
      * 
      * @type {string}
-     * @memberof ConstituentPostRequest
+     * @memberof HouseholdIdPutRequestAllOfAllOfHead
      */
     recognitionName?: string;
     /**
      * 
      * @type {string}
-     * @memberof ConstituentPostRequest
+     * @memberof HouseholdIdPutRequestAllOfAllOfHead
      */
     jobTitle?: string;
     /**
      * 
      * @type {string}
-     * @memberof ConstituentPostRequest
+     * @memberof HouseholdIdPutRequestAllOfAllOfHead
      */
     employer?: string;
     /**
      * 
      * @type {string}
-     * @memberof ConstituentPostRequest
+     * @memberof HouseholdIdPutRequestAllOfAllOfHead
      */
     website?: string;
     /**
      * 
      * @type {string}
-     * @memberof ConstituentPostRequest
+     * @memberof HouseholdIdPutRequestAllOfAllOfHead
      */
     facebookId?: string;
     /**
      * 
      * @type {string}
-     * @memberof ConstituentPostRequest
+     * @memberof HouseholdIdPutRequestAllOfAllOfHead
      */
     twitterId?: string;
     /**
      * 
      * @type {string}
-     * @memberof ConstituentPostRequest
+     * @memberof HouseholdIdPutRequestAllOfAllOfHead
      */
     linkedInId?: string;
     /**
      * 
      * @type {string}
-     * @memberof ConstituentPostRequest
+     * @memberof HouseholdIdPutRequestAllOfAllOfHead
      */
-    gender?: ConstituentPostRequestGenderEnum;
+    gender?: HouseholdIdPutRequestAllOfAllOfHeadGenderEnum;
     /**
      * 
      * @type {Date}
-     * @memberof ConstituentPostRequest
+     * @memberof HouseholdIdPutRequestAllOfAllOfHead
      */
     birthdate?: Date;
     /**
      * 
      * @type {string}
-     * @memberof ConstituentPostRequest
+     * @memberof HouseholdIdPutRequestAllOfAllOfHead
      */
-    profilePictureType?: ConstituentPostRequestProfilePictureTypeEnum;
+    profilePictureType?: HouseholdIdPutRequestAllOfAllOfHeadProfilePictureTypeEnum;
     /**
      * 
      * @type {ConstituentPostRequestAllOfAllOfPrimaryEmail}
-     * @memberof ConstituentPostRequest
+     * @memberof HouseholdIdPutRequestAllOfAllOfHead
      */
     primaryEmail?: ConstituentPostRequestAllOfAllOfPrimaryEmail;
     /**
      * 
      * @type {ConstituentsGet200ResponseAllOfResultsInnerAllOfAllOfPrimaryPhone}
-     * @memberof ConstituentPostRequest
+     * @memberof HouseholdIdPutRequestAllOfAllOfHead
      */
     primaryPhone?: ConstituentsGet200ResponseAllOfResultsInnerAllOfAllOfPrimaryPhone;
     /**
      * 
      * @type {ConstituentPostRequestAllOfAllOfPrimaryAddress}
-     * @memberof ConstituentPostRequest
+     * @memberof HouseholdIdPutRequestAllOfAllOfHead
      */
     primaryAddress?: ConstituentPostRequestAllOfAllOfPrimaryAddress;
     /**
      * Non-primary addresses
      * @type {Array<ConstituentPostRequestAllOfAllOfPrimaryAddress>}
-     * @memberof ConstituentPostRequest
+     * @memberof HouseholdIdPutRequestAllOfAllOfHead
      */
     secondaryAddresses?: Array<ConstituentPostRequestAllOfAllOfPrimaryAddress>;
     /**
      * Non-primary email addresses
      * @type {Array<ConstituentPostRequestAllOfAllOfSecondaryEmailsInner>}
-     * @memberof ConstituentPostRequest
+     * @memberof HouseholdIdPutRequestAllOfAllOfHead
      */
     secondaryEmails?: Array<ConstituentPostRequestAllOfAllOfSecondaryEmailsInner>;
     /**
      * Non-primary phones
      * @type {Array<ConstituentsGet200ResponseAllOfResultsInnerAllOfAllOfPrimaryPhone>}
-     * @memberof ConstituentPostRequest
+     * @memberof HouseholdIdPutRequestAllOfAllOfHead
      */
     secondaryPhones?: Array<ConstituentsGet200ResponseAllOfResultsInnerAllOfAllOfPrimaryPhone>;
     /**
      * The full picture File Attachment. Note that a Constituent can only have one Profile Picture; adding a new one will remove the old one.
      * @type {Array<ConstituentPostRequestAllOfAllOfFullCustomProfileImageInner>}
-     * @memberof ConstituentPostRequest
+     * @memberof HouseholdIdPutRequestAllOfAllOfHead
      */
     fullCustomProfileImage?: Array<ConstituentPostRequestAllOfAllOfFullCustomProfileImageInner>;
     /**
      * The cropped picture File Attachment. Note that a Constituent can only have one Profile Picture; adding a new one will remove the old one.
      * @type {Array<ConstituentPostRequestAllOfAllOfFullCustomProfileImageInner>}
-     * @memberof ConstituentPostRequest
+     * @memberof HouseholdIdPutRequestAllOfAllOfHead
      */
     croppedCustomProfileImage?: Array<ConstituentPostRequestAllOfAllOfFullCustomProfileImageInner>;
     /**
      * 
      * @type {Array<ConstituentPostRequestAllOfAllOfCustomValuesInner>}
-     * @memberof ConstituentPostRequest
+     * @memberof HouseholdIdPutRequestAllOfAllOfHead
      */
     customValues?: Array<ConstituentPostRequestAllOfAllOfCustomValuesInner>;
-    /**
-     * The ID of the household this constituent is in (not to be confused with AccountNumber)
-     * @type {number}
-     * @memberof ConstituentPostRequest
-     */
-    householdId?: number;
-    /**
-     * 
-     * @type {string}
-     * @memberof ConstituentPostRequest
-     */
-    preferredCommunicationChannel?: ConstituentPostRequestPreferredCommunicationChannelEnum;
-    /**
-     * 
-     * @type {Array<string>}
-     * @memberof ConstituentPostRequest
-     */
-    communicationRestrictions?: Array<ConstituentPostRequestCommunicationRestrictionsEnum>;
-    /**
-     * 
-     * @type {string}
-     * @memberof ConstituentPostRequest
-     */
-    emailInterestType?: ConstituentPostRequestEmailInterestTypeEnum;
-    /**
-     * IDs for custom email interests if the email interest type is Custom
-     * @type {Array<number>}
-     * @memberof ConstituentPostRequest
-     */
-    customEmailInterestIds?: Array<number>;
 }
 
 /**
 * @export
 * @enum {string}
 */
-export enum ConstituentPostRequestTypeEnum {
+export enum HouseholdIdPutRequestAllOfAllOfHeadTypeEnum {
     Individual = 'Individual',
     Organization = 'Organization'
 }
@@ -286,7 +256,7 @@ export enum ConstituentPostRequestTypeEnum {
 * @export
 * @enum {string}
 */
-export enum ConstituentPostRequestStatusEnum {
+export enum HouseholdIdPutRequestAllOfAllOfHeadStatusEnum {
     Active = 'Active',
     Inactive = 'Inactive',
     Deceased = 'Deceased'
@@ -295,7 +265,7 @@ export enum ConstituentPostRequestStatusEnum {
 * @export
 * @enum {string}
 */
-export enum ConstituentPostRequestGenderEnum {
+export enum HouseholdIdPutRequestAllOfAllOfHeadGenderEnum {
     Male = 'Male',
     Female = 'Female',
     Other = 'Other'
@@ -304,60 +274,31 @@ export enum ConstituentPostRequestGenderEnum {
 * @export
 * @enum {string}
 */
-export enum ConstituentPostRequestProfilePictureTypeEnum {
+export enum HouseholdIdPutRequestAllOfAllOfHeadProfilePictureTypeEnum {
     None = 'None',
     Custom = 'Custom',
     Twitter = 'Twitter'
 }
-/**
-* @export
-* @enum {string}
-*/
-export enum ConstituentPostRequestPreferredCommunicationChannelEnum {
-    Email = 'Email',
-    Phone = 'Phone',
-    TextMessage = 'TextMessage',
-    Mail = 'Mail'
-}
-/**
-* @export
-* @enum {string}
-*/
-export enum ConstituentPostRequestCommunicationRestrictionsEnum {
-    DoNotCall = 'DoNotCall',
-    DoNotMail = 'DoNotMail',
-    DoNotSolicit = 'DoNotSolicit'
-}
-/**
-* @export
-* @enum {string}
-*/
-export enum ConstituentPostRequestEmailInterestTypeEnum {
-    All = 'All',
-    Custom = 'Custom',
-    OptedOut = 'OptedOut'
-}
 
 
 /**
- * Check if a given object implements the ConstituentPostRequest interface.
+ * Check if a given object implements the HouseholdIdPutRequestAllOfAllOfHead interface.
  */
-export function instanceOfConstituentPostRequest(value: object): value is ConstituentPostRequest {
-    if (!('type' in value) || value['type'] === undefined) return false;
+export function instanceOfHouseholdIdPutRequestAllOfAllOfHead(value: object): value is HouseholdIdPutRequestAllOfAllOfHead {
     return true;
 }
 
-export function ConstituentPostRequestFromJSON(json: any): ConstituentPostRequest {
-    return ConstituentPostRequestFromJSONTyped(json, false);
+export function HouseholdIdPutRequestAllOfAllOfHeadFromJSON(json: any): HouseholdIdPutRequestAllOfAllOfHead {
+    return HouseholdIdPutRequestAllOfAllOfHeadFromJSONTyped(json, false);
 }
 
-export function ConstituentPostRequestFromJSONTyped(json: any, ignoreDiscriminator: boolean): ConstituentPostRequest {
+export function HouseholdIdPutRequestAllOfAllOfHeadFromJSONTyped(json: any, ignoreDiscriminator: boolean): HouseholdIdPutRequestAllOfAllOfHead {
     if (json == null) {
         return json;
     }
     return {
         
-        'type': json['Type'],
+        'type': json['Type'] == null ? undefined : json['Type'],
         'status': json['Status'] == null ? undefined : json['Status'],
         'firstName': json['FirstName'] == null ? undefined : json['FirstName'],
         'lastName': json['LastName'] == null ? undefined : json['LastName'],
@@ -387,19 +328,14 @@ export function ConstituentPostRequestFromJSONTyped(json: any, ignoreDiscriminat
         'fullCustomProfileImage': json['FullCustomProfileImage'] == null ? undefined : ((json['FullCustomProfileImage'] as Array<any>).map(ConstituentPostRequestAllOfAllOfFullCustomProfileImageInnerFromJSON)),
         'croppedCustomProfileImage': json['CroppedCustomProfileImage'] == null ? undefined : ((json['CroppedCustomProfileImage'] as Array<any>).map(ConstituentPostRequestAllOfAllOfFullCustomProfileImageInnerFromJSON)),
         'customValues': json['CustomValues'] == null ? undefined : ((json['CustomValues'] as Array<any>).map(ConstituentPostRequestAllOfAllOfCustomValuesInnerFromJSON)),
-        'householdId': json['HouseholdId'] == null ? undefined : json['HouseholdId'],
-        'preferredCommunicationChannel': json['PreferredCommunicationChannel'] == null ? undefined : json['PreferredCommunicationChannel'],
-        'communicationRestrictions': json['CommunicationRestrictions'] == null ? undefined : json['CommunicationRestrictions'],
-        'emailInterestType': json['EmailInterestType'] == null ? undefined : json['EmailInterestType'],
-        'customEmailInterestIds': json['CustomEmailInterestIds'] == null ? undefined : json['CustomEmailInterestIds'],
     };
 }
 
-export function ConstituentPostRequestToJSON(json: any): ConstituentPostRequest {
-    return ConstituentPostRequestToJSONTyped(json, false);
+export function HouseholdIdPutRequestAllOfAllOfHeadToJSON(json: any): HouseholdIdPutRequestAllOfAllOfHead {
+    return HouseholdIdPutRequestAllOfAllOfHeadToJSONTyped(json, false);
 }
 
-export function ConstituentPostRequestToJSONTyped(value?: ConstituentPostRequest | null, ignoreDiscriminator: boolean = false): any {
+export function HouseholdIdPutRequestAllOfAllOfHeadToJSONTyped(value?: HouseholdIdPutRequestAllOfAllOfHead | null, ignoreDiscriminator: boolean = false): any {
     if (value == null) {
         return value;
     }
@@ -436,15 +372,10 @@ export function ConstituentPostRequestToJSONTyped(value?: ConstituentPostRequest
         'FullCustomProfileImage': value['fullCustomProfileImage'] == null ? undefined : ((value['fullCustomProfileImage'] as Array<any>).map(ConstituentPostRequestAllOfAllOfFullCustomProfileImageInnerToJSON)),
         'CroppedCustomProfileImage': value['croppedCustomProfileImage'] == null ? undefined : ((value['croppedCustomProfileImage'] as Array<any>).map(ConstituentPostRequestAllOfAllOfFullCustomProfileImageInnerToJSON)),
         'CustomValues': value['customValues'] == null ? undefined : ((value['customValues'] as Array<any>).map(ConstituentPostRequestAllOfAllOfCustomValuesInnerToJSON)),
-        'HouseholdId': value['householdId'],
-        'PreferredCommunicationChannel': value['preferredCommunicationChannel'],
-        'CommunicationRestrictions': value['communicationRestrictions'],
-        'EmailInterestType': value['emailInterestType'],
-        'CustomEmailInterestIds': value['customEmailInterestIds'],
     };
 }
 
-export const ConstituentPostRequestPropertyValidationAttributesMap: {
+export const HouseholdIdPutRequestAllOfAllOfHeadPropertyValidationAttributesMap: {
     [property: string]: {
         maxLength?: number,
         minLength?: number,

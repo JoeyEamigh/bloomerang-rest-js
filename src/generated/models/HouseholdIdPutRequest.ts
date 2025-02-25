@@ -13,13 +13,13 @@
  */
 
 import { mapValues } from '../runtime';
-import type { HouseholdPostRequestAllOfAllOfHead } from './HouseholdPostRequestAllOfAllOfHead';
+import type { HouseholdIdPutRequestAllOfAllOfHead } from './HouseholdIdPutRequestAllOfAllOfHead';
 import {
-    HouseholdPostRequestAllOfAllOfHeadFromJSON,
-    HouseholdPostRequestAllOfAllOfHeadFromJSONTyped,
-    HouseholdPostRequestAllOfAllOfHeadToJSON,
-    HouseholdPostRequestAllOfAllOfHeadToJSONTyped,
-} from './HouseholdPostRequestAllOfAllOfHead';
+    HouseholdIdPutRequestAllOfAllOfHeadFromJSON,
+    HouseholdIdPutRequestAllOfAllOfHeadFromJSONTyped,
+    HouseholdIdPutRequestAllOfAllOfHeadToJSON,
+    HouseholdIdPutRequestAllOfAllOfHeadToJSONTyped,
+} from './HouseholdIdPutRequestAllOfAllOfHead';
 
 /**
  * 
@@ -71,16 +71,16 @@ export interface HouseholdIdPutRequest {
     recognitionName?: string;
     /**
      * 
-     * @type {HouseholdPostRequestAllOfAllOfHead}
+     * @type {HouseholdIdPutRequestAllOfAllOfHead}
      * @memberof HouseholdIdPutRequest
      */
-    head?: HouseholdPostRequestAllOfAllOfHead;
+    head?: HouseholdIdPutRequestAllOfAllOfHead;
     /**
      * 
-     * @type {Array<HouseholdPostRequestAllOfAllOfHead>}
+     * @type {Array<HouseholdIdPutRequestAllOfAllOfHead>}
      * @memberof HouseholdIdPutRequest
      */
-    members?: Array<HouseholdPostRequestAllOfAllOfHead>;
+    members?: Array<HouseholdIdPutRequestAllOfAllOfHead>;
 }
 
 /**
@@ -107,8 +107,8 @@ export function HouseholdIdPutRequestFromJSONTyped(json: any, ignoreDiscriminato
         'formalName': json['FormalName'] == null ? undefined : json['FormalName'],
         'envelopeName': json['EnvelopeName'] == null ? undefined : json['EnvelopeName'],
         'recognitionName': json['RecognitionName'] == null ? undefined : json['RecognitionName'],
-        'head': json['Head'] == null ? undefined : HouseholdPostRequestAllOfAllOfHeadFromJSON(json['Head']),
-        'members': json['Members'] == null ? undefined : ((json['Members'] as Array<any>).map(HouseholdPostRequestAllOfAllOfHeadFromJSON)),
+        'head': json['Head'] == null ? undefined : HouseholdIdPutRequestAllOfAllOfHeadFromJSON(json['Head']),
+        'members': json['Members'] == null ? undefined : ((json['Members'] as Array<any>).map(HouseholdIdPutRequestAllOfAllOfHeadFromJSON)),
     };
 }
 
@@ -130,8 +130,8 @@ export function HouseholdIdPutRequestToJSONTyped(value?: HouseholdIdPutRequest |
         'FormalName': value['formalName'],
         'EnvelopeName': value['envelopeName'],
         'RecognitionName': value['recognitionName'],
-        'Head': HouseholdPostRequestAllOfAllOfHeadToJSON(value['head']),
-        'Members': value['members'] == null ? undefined : ((value['members'] as Array<any>).map(HouseholdPostRequestAllOfAllOfHeadToJSON)),
+        'Head': HouseholdIdPutRequestAllOfAllOfHeadToJSON(value['head']),
+        'Members': value['members'] == null ? undefined : ((value['members'] as Array<any>).map(HouseholdIdPutRequestAllOfAllOfHeadToJSON)),
     };
 }
 
